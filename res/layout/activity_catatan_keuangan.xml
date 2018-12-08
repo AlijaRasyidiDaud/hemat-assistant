@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CatatanKeuangan"
+    android:background="@color/colorPrimary">
+
+
+    <TextView
+        android:id="@+id/pemasukan"
+        android:layout_width="@dimen/panjang_teks"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/margin_samping"
+        android:layout_marginTop="80dp"
+        android:text="@string/pemasukan"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <TextView
+        android:id="@+id/no_pemasukan"
+        android:layout_width="@dimen/panjang_teks"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/pemasukan"
+        android:layout_marginEnd="@dimen/margin_samping"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tabung"
+        android:layout_width="@dimen/panjang_teks"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pemasukan"
+        android:layout_marginStart="@dimen/margin_samping"
+        android:text="@string/tabung"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <TextView
+        android:id="@+id/no_tabung"
+        android:layout_width="@dimen/panjang_teks"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/pemasukan"
+        android:layout_marginEnd="@dimen/margin_samping"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/keluaran"
+        android:layout_width="@dimen/panjang_teks"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tabung"
+        android:layout_marginStart="@dimen/margin_samping"
+        android:text="@string/keluaran"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <TextView
+        android:id="@+id/no_keluaran"
+        android:layout_width="@dimen/panjang_teks"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tabung"
+        android:layout_marginEnd="@dimen/margin_samping"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/harian"
+        android:layout_width="@dimen/panjang_teks"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/keluaran"
+        android:layout_marginStart="@dimen/margin_samping"
+        android:text="@string/harian"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <TextView
+        android:id="@+id/no_harian"
+        android:layout_width="@dimen/panjang_teks"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/keluaran"
+        android:layout_marginEnd="@dimen/margin_samping"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/catatan"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="164dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"/>
+
+
+    <TextView
+        android:id="@+id/tag_catatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/catatan"
+        android:layout_alignStart="@+id/pemasukan"
+        android:text="@string/catatan"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+    <TextView
+        android:id="@+id/bulanCatatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/saveKeuangan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/pemasukan"
+        android:layout_marginBottom="98dp"
+        android:background="@color/colorPrimary"
+        app:srcCompat="@drawable/catatkeuangan" />
+
+    <Spinner
+        android:id="@+id/pilih_bulan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="13dp" />
+
+    <Spinner
+        android:id="@+id/pilih_tahun"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pilih_bulan"
+        android:layout_toEndOf="@+id/pilih_bulan" />
+
+    <ImageButton
+        android:id="@+id/cariArsip"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/pilih_bulan"
+        android:background="@color/colorPrimary"
+        app:srcCompat="@drawable/cariarsip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="108dp"
+        android:layout_toEndOf="@+id/saveKeuangan"
+        android:text="@string/savecat"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

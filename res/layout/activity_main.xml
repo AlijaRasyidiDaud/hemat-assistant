@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageButton
+        android:id="@+id/btnTujuan"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="153dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/tujuan" />
+
+    <ImageButton
+        android:id="@+id/btnKeuangan"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="67dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/catatankeuangan" />
+
+    <ImageButton
+        android:id="@+id/btnAbout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:layout_toEndOf="@+id/btnKeuangan"
+        android:layout_toRightOf="@id/btnKeuangan"
+        android:src="@drawable/abaoutme"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnKeuangan"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ct"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTujuan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-153dp"
+        android:text="@string/tk"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+</RelativeLayout>

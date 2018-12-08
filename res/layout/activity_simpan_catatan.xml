@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CatatanKeuangan"
+    android:background="@color/colorPrimary">
+
+
+    <EditText
+        android:id="@+id/input_pemasukan"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:ems="10"
+        android:hint="@string/pemasukan_hint"
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <EditText
+        android:id="@+id/input_tabung"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_pemasukan"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/tabung_hint"
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <EditText
+        android:id="@+id/input_keluaran"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_tabung"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/keluaran_hint"
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+    <EditText
+        android:id="@+id/input_catatan"
+        android:layout_width="270dp"
+        android:layout_height="205dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/catatan_hint"
+        android:inputType="textMultiLine"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageButton
+        android:id="@+id/btnSave"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/input_catatan"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimary"
+        app:srcCompat="@drawable/catatkeuangan" />
+
+    <TextView
+        android:id="@+id/tampilTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="34dp"
+        android:layout_toEndOf="@+id/btnSave"
+        android:text="@string/savecat"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+</RelativeLayout>

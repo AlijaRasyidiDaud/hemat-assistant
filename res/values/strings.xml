@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Hemat Assistant</string>
+    <string name="title_activity_catatan_keuangan">Catatan Keuangan</string>
+
+    <!-- Menu utama -->
+    <string name="ct">Catatan Keuangan</string>
+    <string name="tk">Tujuan Keuangan</string>
+
+    <!-- Tampilan Catatan Keuangan -->
+    <string name="pemasukan">Pemasukan bulanan</string>
+    <string name="tabung">Rencana uang ditabung</string>
+    <string name="keluaran">Rencana pengeluaran besar</string>
+    <string name="harian">Anjuran pengeluaran harian</string>
+    <string name="catatan">Catatan</string>
+    <string name="savecat">Simpan Catatan</string>
+
+
+    <!-- Spinner pilih bulan -->
+    <string-array name="pilihBulan">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+
+    <string-array name="pilihTahun">
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+        <item>2031</item>
+        <item>2032</item>
+        <item>2033</item>
+        <item>2034</item>
+    </string-array>
+
+    <!-- Hint Input Catatan Keuangan -->
+    <string name="catatan_hint">Catatan evaluasi bulanan. apakah tercapai atau tidak..</string>
+    <string name="pemasukan_hint">Pemasukan bulan ini…</string>
+    <string name="tabung_hint">Uang yang ingin ditabung…</string>
+    <string name="keluaran_hint">Rencana pengeluaran bulan ini…</string>
+
+    <!-- Tujuan Keuangan -->
+    <string name="tujuan_judul">Tujuan Keuangan</string>
+    <string name="tulis_tujuan">Tulis Tujuan</string>
+    <string name="hint">.....</string>
+    <string name="simpantuj">Simpan Tujuan</string>
+
+    <!-- About Me -->
+    <string name="aboutMe">
+        <p>Aplikasi Hemat Asistant berfungsi sebagai pengingat masalah keuangan pengguna dan membantu menjalankan program
+        menabung atau menghemat yang sedang pengguna jalani.</p>
+    </string>
+
+    <string name="contact">Contact : @VaniilaTiramisu (Twitter)</string>
+
+    <!-- Ad -->
+    <string name="id_app">ca-app-pub-4591099898831661~1629406907</string>
+    <string name="id_inters">ca-app-pub-4591099898831661/5935251910</string>
+    <string name="id_testad">ca-app-pub-3940256099942544/1033173712</string>
+
+
+</resources>

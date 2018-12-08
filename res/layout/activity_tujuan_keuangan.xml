@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TujuanKeuangan"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/judulTujuan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tujuan_judul" />
+
+    <EditText
+        android:id="@+id/tujuan1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/hint"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/tujuan2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/hint"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/tujuan3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/hint"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/tujuan4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/hint"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/tujuan5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/hint"
+        android:background="@color/colorPrimary"/>
+
+    <ImageButton
+        android:id="@+id/saveTujuan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="@color/colorPrimary"
+        app:srcCompat="@drawable/catatkeuangan" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/simpantuj"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"/>
+
+
+</LinearLayout>
